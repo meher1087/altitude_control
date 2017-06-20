@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="detect_disparity" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/detect_disparity" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/detect_disparity" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-s" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`opencv-config --cxxflags`" />
+			<Add directory="/usr/local/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lopencv_shape" />
+			<Add option="-lopencv_stitching" />
+			<Add option="-lopencv_objdetect" />
+			<Add option="-lopencv_superres" />
+			<Add option="-lopencv_videostab" />
+			<Add option="-lopencv_calib3d" />
+			<Add option="-lopencv_features2d" />
+			<Add option="-lopencv_highgui" />
+			<Add option="-lopencv_videoio" />
+			<Add option="-lopencv_imgcodecs" />
+			<Add option="-lopencv_video" />
+			<Add option="-lopencv_photo" />
+			<Add option="-lopencv_ml" />
+			<Add option="-lopencv_imgproc" />
+			<Add option="-lopencv_flann" />
+			<Add option="-lopencv_core" />
+			<Add directory="/usr/local/lib" />
+		</Linker>
+		<Unit filename="lena.jpg" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1">
+				<lib name="opencv" />
+			</lib_finder>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
