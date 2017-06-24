@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1497954767 source:/home/mady/MEGA/anusha codes/detect_disparity/main.cpp
+1498207980 source:/home/mady/MEGA/anusha codes/detect_disparity/main.cpp
 	<opencv2/core.hpp>
 	<opencv2/opencv.hpp>
 	"opencv2/opencv.hpp"
@@ -7,6 +7,7 @@
 	"opencv2/imgcodecs.hpp"
 	"opencv2/highgui.hpp"
 	<stdio.h>
+	<iostream>
 
 1484927801 /usr/local/include/opencv2/core/core.hpp
 	"opencv2/core.hpp"
@@ -735,5 +736,11 @@
 	"opencv2/imgproc.hpp"
 
 1484927801 /usr/local/include/opencv2/highgui/highgui.hpp
+	"opencv2/highgui.hpp"
+
+1498126025 source:/home/mady/MEGA/anusha codes/detect_disparity/Stereo_bm.cpp
+	<iostream>
+	"opencv2/calib3d.hpp"
+	"opencv2/imgcodecs.hpp"
 	"opencv2/highgui.hpp"
 
